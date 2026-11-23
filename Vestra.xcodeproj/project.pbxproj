@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54FF3A91A7589DB097997CA4 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768B3E6E231958C9EA8518E2 /* AppPreferences.swift */; };
+		43FF7443DE3A5AE7EED8202A /* DebugSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67EFA6CD22F556F841F622 /* DebugSupport.swift */; };
+		50F55F48D8F746D356C36F21 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0B8622D78B11F19B333F44 /* RootView.swift */; };
+		C494EECAED8B50AEA1716AC5 /* VestraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F1B9F7E78E929E7358E54 /* VestraApp.swift */; };
+		79334099FE6BFA13468A68A2 /* BackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DE924077D41F428184B18 /* BackupService.swift */; };
+		B46E3E148EF27A5F5FF4342B /* CategoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E2946FA232C4E0C7A04C96 /* CategoryStore.swift */; };
+		55F2622CDE1ECB5BAD8D7DF9 /* DecimalSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C865DB4D37E68FEE2E28863 /* DecimalSupport.swift */; };
+		6EE713DFC4B69F9FD0BFF7CC /* FinanceLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99C680C4843A089AA35201 /* FinanceLedger.swift */; };
+		ABD4BB873122AAA63CC0D052 /* FinanceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF1C90F9CF6D925696C6FE9 /* FinanceStore.swift */; };
+		6325BFC7891E7737EB18226B /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CC09EB8356C8CFB93C2817F /* Formatting.swift */; };
+		6AC089142A716FAA3F3F7059 /* ReportPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEA6867DCAB7F34015575E3 /* ReportPeriod.swift */; };
+		0F591084E815EE14A083871C /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ACF35F93227E5B0BFFBF15 /* Categories.swift */; };
+		D2B70051BBEA1C7927FC2559 /* FinanceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A9544DEA00A5347D8A7BF /* FinanceModels.swift */; };
+		9AFFEBC80CD38913933969FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B0E5F899AE50E9411D5E29 /* Assets.xcassets */; };
+		E778468F35CD16032BF98ED5 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E306C4C987E77F64ED208F2A /* Localizable.xcstrings */; };
+		845C4D34FA5D2820912877FE /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75901C27480ED73B60D5EE56 /* Components.swift */; };
+		1A1B38D59C236297A9EDC117 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1CA3DE668629B4035EF4B2 /* Theme.swift */; };
+		39B9C8C838659BEE05F79B90 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4191C54C4BA6E48B4C3A6C8E /* DashboardView.swift */; };
+		83A6983AEE82D33923461149 /* CategoryManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18987FCA8EB4E0D29B99E5FA /* CategoryManagementView.swift */; };
+		FB313F260A301628FD5D9C73 /* GoldEditors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EFD3620A2EB27F99C6B713 /* GoldEditors.swift */; };
+		C3CC3A0AAF297E83CD52726A /* GoldHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2618AA5B61AB3B622548F41 /* GoldHistoryView.swift */; };
+		8A738F1D914D558B5AE0D93C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8569D84DC8440CC723166 /* SettingsView.swift */; };
+		4E8EA6962F8CB0329977E870 /* StatisticsCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B8FD544D6004B6645D1812 /* StatisticsCharts.swift */; };
+		EE78889C71919CD641F130C4 /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B7C3081C2126A9F8E0D71 /* StatisticsView.swift */; };
+		F730B08AB1B1D76EA5DB375A /* TransactionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36197E2D83FA4BF1641B91C6 /* TransactionEditorView.swift */; };
+		8B074AA8CF3F3420ABC97B84 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527B254442A2021A9284CCF8 /* TransactionsView.swift */; };
+		6062EB15FAFB14A181C3F3E4 /* CategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAFDD487E1DC5E41F074051 /* CategoryTests.swift */; };
+		A4D76CB52E9973C23041965D /* FinanceLedgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67846BEFF6FA863936E2EA6 /* FinanceLedgerTests.swift */; };
+		5C4172801A49749B1E54B3C7 /* LanguagePreferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B28C4C8D05D57ADBBB6289E /* LanguagePreferenceTests.swift */; };
+		246D826572E778CCA43BF01A /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6A63B5F66EFB3F6FDECFBB /* PersistenceTests.swift */; };
+		420176849ACFFD98D6DFAF55 /* VestraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C2086CE47004E6B0BAE7F /* VestraUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		431387EB7262E1CFC79B125E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3435DDA2687639586BF0B70;
+			remoteInfo = Vestra;
+		};
+		04D9379C3231D074B070E8DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3435DDA2687639586BF0B70;
+			remoteInfo = Vestra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84337AD8D27FCD69AF2C4FC2 /* Vestra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vestra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFDED23FA58339F9273F6C84 /* VestraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VestraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCEE5B7C1B654D90B6BEE36F /* VestraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VestraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		768B3E6E231958C9EA8518E2 /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppPreferences.swift"; sourceTree = "<group>"; };
+		0E67EFA6CD22F556F841F622 /* DebugSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DebugSupport.swift"; sourceTree = "<group>"; };
+		CF0B8622D78B11F19B333F44 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootView.swift"; sourceTree = "<group>"; };
+		6A7F1B9F7E78E929E7358E54 /* VestraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VestraApp.swift"; sourceTree = "<group>"; };
+		701DE924077D41F428184B18 /* BackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BackupService.swift"; sourceTree = "<group>"; };
+		05E2946FA232C4E0C7A04C96 /* CategoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryStore.swift"; sourceTree = "<group>"; };
+		3C865DB4D37E68FEE2E28863 /* DecimalSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DecimalSupport.swift"; sourceTree = "<group>"; };
+		AD99C680C4843A089AA35201 /* FinanceLedger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinanceLedger.swift"; sourceTree = "<group>"; };
+		FBF1C90F9CF6D925696C6FE9 /* FinanceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinanceStore.swift"; sourceTree = "<group>"; };
+		2CC09EB8356C8CFB93C2817F /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Formatting.swift"; sourceTree = "<group>"; };
+		DEEA6867DCAB7F34015575E3 /* ReportPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReportPeriod.swift"; sourceTree = "<group>"; };
+		D6ACF35F93227E5B0BFFBF15 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Categories.swift"; sourceTree = "<group>"; };
+		1F2A9544DEA00A5347D8A7BF /* FinanceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinanceModels.swift"; sourceTree = "<group>"; };
+		21B0E5F899AE50E9411D5E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		E306C4C987E77F64ED208F2A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = "Localizable.xcstrings"; sourceTree = "<group>"; };
+		75901C27480ED73B60D5EE56 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components.swift"; sourceTree = "<group>"; };
+		FB1CA3DE668629B4035EF4B2 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme.swift"; sourceTree = "<group>"; };
+		4191C54C4BA6E48B4C3A6C8E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DashboardView.swift"; sourceTree = "<group>"; };
+		18987FCA8EB4E0D29B99E5FA /* CategoryManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryManagementView.swift"; sourceTree = "<group>"; };
+		E8EFD3620A2EB27F99C6B713 /* GoldEditors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoldEditors.swift"; sourceTree = "<group>"; };
+		C2618AA5B61AB3B622548F41 /* GoldHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GoldHistoryView.swift"; sourceTree = "<group>"; };
+		13C8569D84DC8440CC723166 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
+		E7B8FD544D6004B6645D1812 /* StatisticsCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatisticsCharts.swift"; sourceTree = "<group>"; };
+		E58B7C3081C2126A9F8E0D71 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatisticsView.swift"; sourceTree = "<group>"; };
+		36197E2D83FA4BF1641B91C6 /* TransactionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionEditorView.swift"; sourceTree = "<group>"; };
+		527B254442A2021A9284CCF8 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionsView.swift"; sourceTree = "<group>"; };
+		BEAFDD487E1DC5E41F074051 /* CategoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CategoryTests.swift"; sourceTree = "<group>"; };
+		F67846BEFF6FA863936E2EA6 /* FinanceLedgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FinanceLedgerTests.swift"; sourceTree = "<group>"; };
+		7B28C4C8D05D57ADBBB6289E /* LanguagePreferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LanguagePreferenceTests.swift"; sourceTree = "<group>"; };
+		9D6A63B5F66EFB3F6FDECFBB /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PersistenceTests.swift"; sourceTree = "<group>"; };
+		657C2086CE47004E6B0BAE7F /* VestraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VestraUITests.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB575B01C9EDB90A46216F71 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E55CCD73B2588347AA420B = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10F39C422D52555640EE00C1 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518DA81DB9B99529C0C0AEBE = {isa = PBXGroup; children = (E298A5F0C8831E9AD0E55E82 /* Vestra */, A0129D47289A0CE8E6CD396E /* VestraTests */, 944336DE4341F27E9DE3E2A7 /* VestraUITests */, 547D009064F7C3F13BEF3460 /* Products */, ); sourceTree = "<group>"; };
+		547D009064F7C3F13BEF3460 /* Products */ = {isa = PBXGroup; children = (84337AD8D27FCD69AF2C4FC2 /* Vestra.app */, DFDED23FA58339F9273F6C84 /* VestraTests.xctest */, BCEE5B7C1B654D90B6BEE36F /* VestraUITests.xctest */, ); name = Products; sourceTree = "<group>"; };
+		E298A5F0C8831E9AD0E55E82 /* Vestra */ = {isa = PBXGroup; children = (453570D1C4CC6908083E1BBE /* App */, 89B1DA11F04445E3EF2552E0 /* Logic */, 27608D0BC38E88774F3F1FEB /* Models */, BB08B2419737DE1DA03B3CAF /* Resources */, DFAADD8A311DA45022E6AFA5 /* Views */, ); path = Vestra; sourceTree = "<group>"; };
+		453570D1C4CC6908083E1BBE /* App */ = {isa = PBXGroup; children = (768B3E6E231958C9EA8518E2 /* AppPreferences.swift */, 0E67EFA6CD22F556F841F622 /* DebugSupport.swift */, CF0B8622D78B11F19B333F44 /* RootView.swift */, 6A7F1B9F7E78E929E7358E54 /* VestraApp.swift */, ); path = App; sourceTree = "<group>"; };
+		89B1DA11F04445E3EF2552E0 /* Logic */ = {isa = PBXGroup; children = (701DE924077D41F428184B18 /* BackupService.swift */, 05E2946FA232C4E0C7A04C96 /* CategoryStore.swift */, 3C865DB4D37E68FEE2E28863 /* DecimalSupport.swift */, AD99C680C4843A089AA35201 /* FinanceLedger.swift */, FBF1C90F9CF6D925696C6FE9 /* FinanceStore.swift */, 2CC09EB8356C8CFB93C2817F /* Formatting.swift */, DEEA6867DCAB7F34015575E3 /* ReportPeriod.swift */, ); path = Logic; sourceTree = "<group>"; };
+		27608D0BC38E88774F3F1FEB /* Models */ = {isa = PBXGroup; children = (D6ACF35F93227E5B0BFFBF15 /* Categories.swift */, 1F2A9544DEA00A5347D8A7BF /* FinanceModels.swift */, ); path = Models; sourceTree = "<group>"; };
+		BB08B2419737DE1DA03B3CAF /* Resources */ = {isa = PBXGroup; children = (21B0E5F899AE50E9411D5E29 /* Assets.xcassets */, E306C4C987E77F64ED208F2A /* Localizable.xcstrings */, ); path = Resources; sourceTree = "<group>"; };
+		DFAADD8A311DA45022E6AFA5 /* Views */ = {isa = PBXGroup; children = (828C6D3B5ECB2BE12A003C88 /* Components */, 25A92E2556C48156AB760C86 /* Dashboard */, EB4404885405139D0958CF2E /* Settings */, DCC2232D9527C72923F720C1 /* Statistics */, BAFED580E65A96CE80DA5D3D /* Transactions */, ); path = Views; sourceTree = "<group>"; };
+		828C6D3B5ECB2BE12A003C88 /* Components */ = {isa = PBXGroup; children = (75901C27480ED73B60D5EE56 /* Components.swift */, FB1CA3DE668629B4035EF4B2 /* Theme.swift */, ); path = Components; sourceTree = "<group>"; };
+		25A92E2556C48156AB760C86 /* Dashboard */ = {isa = PBXGroup; children = (4191C54C4BA6E48B4C3A6C8E /* DashboardView.swift */, ); path = Dashboard; sourceTree = "<group>"; };
+		EB4404885405139D0958CF2E /* Settings */ = {isa = PBXGroup; children = (18987FCA8EB4E0D29B99E5FA /* CategoryManagementView.swift */, E8EFD3620A2EB27F99C6B713 /* GoldEditors.swift */, C2618AA5B61AB3B622548F41 /* GoldHistoryView.swift */, 13C8569D84DC8440CC723166 /* SettingsView.swift */, ); path = Settings; sourceTree = "<group>"; };
+		DCC2232D9527C72923F720C1 /* Statistics */ = {isa = PBXGroup; children = (E7B8FD544D6004B6645D1812 /* StatisticsCharts.swift */, E58B7C3081C2126A9F8E0D71 /* StatisticsView.swift */, ); path = Statistics; sourceTree = "<group>"; };
+		BAFED580E65A96CE80DA5D3D /* Transactions */ = {isa = PBXGroup; children = (36197E2D83FA4BF1641B91C6 /* TransactionEditorView.swift */, 527B254442A2021A9284CCF8 /* TransactionsView.swift */, ); path = Transactions; sourceTree = "<group>"; };
+		A0129D47289A0CE8E6CD396E /* VestraTests */ = {isa = PBXGroup; children = (BEAFDD487E1DC5E41F074051 /* CategoryTests.swift */, F67846BEFF6FA863936E2EA6 /* FinanceLedgerTests.swift */, 7B28C4C8D05D57ADBBB6289E /* LanguagePreferenceTests.swift */, 9D6A63B5F66EFB3F6FDECFBB /* PersistenceTests.swift */, ); path = VestraTests; sourceTree = "<group>"; };
+		944336DE4341F27E9DE3E2A7 /* VestraUITests */ = {isa = PBXGroup; children = (657C2086CE47004E6B0BAE7F /* VestraUITests.swift */, ); path = VestraUITests; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3435DDA2687639586BF0B70 /* Vestra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5505F9AF814A7F0992DE2402;
+			buildPhases = (
+				25D9BA1528E55E2E0F1B2769,
+				DB575B01C9EDB90A46216F71,
+				0BC40DDAB69570E4FBE53FB5,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vestra;
+			productName = Vestra;
+			productReference = 84337AD8D27FCD69AF2C4FC2 /* Vestra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A700229C3AC2DAE057FE5B27 /* VestraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5A230C5C352779E4F6499D2;
+			buildPhases = (
+				2229444B3DB900354DB0BCE1,
+				D0E55CCD73B2588347AA420B,
+				7D1CA36EF84C70BBCC40F776,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E54DEBD65D8142E7785275AA,
+			);
+			name = VestraTests;
+			productName = VestraTests;
+			productReference = DFDED23FA58339F9273F6C84 /* VestraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		678B4DE61235C519CC844609 /* VestraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21B87CF1F142C5218F838559;
+			buildPhases = (
+				59206A93B0C1E9B2C6E3AAD7,
+				10F39C422D52555640EE00C1,
+				9D42D112B568DAD0088A2C50,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D89B49B11B6DFDF3F9EA67DF,
+			);
+			name = VestraUITests;
+			productName = VestraUITests;
+			productReference = BCEE5B7C1B654D90B6BEE36F /* VestraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E3435DDA2687639586BF0B70 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A700229C3AC2DAE057FE5B27 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E3435DDA2687639586BF0B70;
+					};
+					678B4DE61235C519CC844609 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E3435DDA2687639586BF0B70;
+					};
+				};
+			};
+			buildConfigurationList = AD8DC1A475C1871509FE9877;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				tr,
+				Base,
+			);
+			mainGroup = 518DA81DB9B99529C0C0AEBE;
+			productRefGroup = 547D009064F7C3F13BEF3460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3435DDA2687639586BF0B70 /* Vestra */,
+				A700229C3AC2DAE057FE5B27 /* VestraTests */,
+				678B4DE61235C519CC844609 /* VestraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BC40DDAB69570E4FBE53FB5 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFFEBC80CD38913933969FE /* Assets.xcassets in Resources */,
+				E778468F35CD16032BF98ED5 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D1CA36EF84C70BBCC40F776 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D42D112B568DAD0088A2C50 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25D9BA1528E55E2E0F1B2769 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54FF3A91A7589DB097997CA4 /* AppPreferences.swift in Sources */,
+				43FF7443DE3A5AE7EED8202A /* DebugSupport.swift in Sources */,
+				50F55F48D8F746D356C36F21 /* RootView.swift in Sources */,
+				C494EECAED8B50AEA1716AC5 /* VestraApp.swift in Sources */,
+				79334099FE6BFA13468A68A2 /* BackupService.swift in Sources */,
+				B46E3E148EF27A5F5FF4342B /* CategoryStore.swift in Sources */,
+				55F2622CDE1ECB5BAD8D7DF9 /* DecimalSupport.swift in Sources */,
+				6EE713DFC4B69F9FD0BFF7CC /* FinanceLedger.swift in Sources */,
+				ABD4BB873122AAA63CC0D052 /* FinanceStore.swift in Sources */,
+				6325BFC7891E7737EB18226B /* Formatting.swift in Sources */,
+				6AC089142A716FAA3F3F7059 /* ReportPeriod.swift in Sources */,
+				0F591084E815EE14A083871C /* Categories.swift in Sources */,
+				D2B70051BBEA1C7927FC2559 /* FinanceModels.swift in Sources */,
+				845C4D34FA5D2820912877FE /* Components.swift in Sources */,
+				1A1B38D59C236297A9EDC117 /* Theme.swift in Sources */,
+				39B9C8C838659BEE05F79B90 /* DashboardView.swift in Sources */,
+				83A6983AEE82D33923461149 /* CategoryManagementView.swift in Sources */,
+				FB313F260A301628FD5D9C73 /* GoldEditors.swift in Sources */,
+				C3CC3A0AAF297E83CD52726A /* GoldHistoryView.swift in Sources */,
+				8A738F1D914D558B5AE0D93C /* SettingsView.swift in Sources */,
+				4E8EA6962F8CB0329977E870 /* StatisticsCharts.swift in Sources */,
+				EE78889C71919CD641F130C4 /* StatisticsView.swift in Sources */,
+				F730B08AB1B1D76EA5DB375A /* TransactionEditorView.swift in Sources */,
+				8B074AA8CF3F3420ABC97B84 /* TransactionsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2229444B3DB900354DB0BCE1 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6062EB15FAFB14A181C3F3E4 /* CategoryTests.swift in Sources */,
+				A4D76CB52E9973C23041965D /* FinanceLedgerTests.swift in Sources */,
+				5C4172801A49749B1E54B3C7 /* LanguagePreferenceTests.swift in Sources */,
+				246D826572E778CCA43BF01A /* PersistenceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59206A93B0C1E9B2C6E3AAD7 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420176849ACFFD98D6DFAF55 /* VestraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E54DEBD65D8142E7785275AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3435DDA2687639586BF0B70 /* Vestra */;
+			targetProxy = 431387EB7262E1CFC79B125E /* PBXContainerItemProxy */;
+		};
+		D89B49B11B6DFDF3F9EA67DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3435DDA2687639586BF0B70 /* Vestra */;
+			targetProxy = 04D9379C3231D074B070E8DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCFB30EAE59D6917CE906371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37CDDD61FED8A39EEA88C0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91B8F6FB95707A0AB87A87F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vestra;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.vestra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BB071F776B40F4837F61A6A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Vestra;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.vestra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1CD6F2168A0DAE0628DDD709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.vestra.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vestra.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vestra";
+			};
+			name = Debug;
+		};
+		804C6C12DD7ADD7F19F0611C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.vestra.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vestra.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Vestra";
+			};
+			name = Release;
+		};
+		CEF627EE4E16426F9A0AFD7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.vestra.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Vestra;
+			};
+			name = Debug;
+		};
+		FF3EEA2377D83CCE09978A96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.personal.vestra.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Vestra;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD8DC1A475C1871509FE9877 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFB30EAE59D6917CE906371,
+				37CDDD61FED8A39EEA88C0F9,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5505F9AF814A7F0992DE2402 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B8F6FB95707A0AB87A87F1,
+				BB071F776B40F4837F61A6A3,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5A230C5C352779E4F6499D2 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD6F2168A0DAE0628DDD709,
+				804C6C12DD7ADD7F19F0611C,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21B87CF1F142C5218F838559 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEF627EE4E16426F9A0AFD7F,
+				FF3EEA2377D83CCE09978A96,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
