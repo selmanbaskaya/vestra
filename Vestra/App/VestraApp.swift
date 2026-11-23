@@ -5,6 +5,7 @@ import SwiftUI
 struct VestraApp: App {
     private let preferencesReady = LanguagePreferences.prepare()
     @AppStorage(AppPreferences.languageKey) private var language: AppLanguage = .english
+    @AppStorage(AppPreferences.turkishEnabledKey) private var turkishEnabled = false
     @AppStorage(AppPreferences.appearanceKey) private var appearance: AppearanceMode = .system
 
     private let container: ModelContainer = {
@@ -33,6 +34,11 @@ struct VestraApp: App {
                     appearance.apply()
                 }
                 .onChange(of: appearance) { _, newValue in newValue.apply() }
+                .onChange(of: turkishEnabled) { _, enabled in
+                    if !enabled && language == .turkish {
+                        language = .english
+                    }
+                }
         }
         .modelContainer(container)
     }

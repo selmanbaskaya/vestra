@@ -56,10 +56,8 @@ struct SettingsView: View {
                             Text(verbatim: AppLanguage.english.nativeName)
                         }
                     }
-                    Toggle(isOn: turkishEnabledBinding) {
-                        Text("Enable Turkish")
-                    }
-                    .accessibilityIdentifier("turkishEnabledToggle")
+                    Toggle("Enable Turkish", isOn: $turkishEnabled)
+                        .accessibilityIdentifier("turkishEnabledToggle")
                 } header: {
                     Text("Language")
                 } footer: {
@@ -179,13 +177,6 @@ struct SettingsView: View {
                 Button("OK", role: .cancel) {}
             }
         }
-    }
-
-    private var turkishEnabledBinding: Binding<Bool> {
-        Binding(
-            get: { turkishEnabled },
-            set: { LanguagePreferences.setTurkishEnabled($0) }
-        )
     }
 
     private func valueRow(_ titleKey: LocalizedStringKey, _ value: String?) -> some View {

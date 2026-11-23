@@ -50,6 +50,13 @@ final class VestraUITests: XCTestCase {
         }
     }
 
+    private func reveal(_ element: XCUIElement, in app: XCUIApplication) {
+        if element.waitForExistence(timeout: 1) { return }
+        app.swipeUp()
+        if element.waitForExistence(timeout: 1) { return }
+        app.swipeUp()
+    }
+
     private func openSettings(_ app: XCUIApplication) {
         if app.tabBars.buttons["Settings"].exists {
             app.tabBars.buttons["Settings"].tap()
@@ -59,12 +66,20 @@ final class VestraUITests: XCTestCase {
         }
     }
 
-    private func enableTurkish(_ app: XCUIApplication) {
+    private func setTurkishEnabled(_ app: XCUIApplication, _ enabled: Bool) {
         let toggle = app.switches["turkishEnabledToggle"]
         XCTAssertTrue(toggle.waitForExistence(timeout: 5))
-        if toggle.value as? String != "1" {
+        let want = enabled ? "1" : "0"
+        if toggle.value as? String == want { return }
+        toggle.coordinate(withNormalizedOffset: CGVector(dx: 0.92, dy: 0.5)).tap()
+        if toggle.value as? String != want {
             toggle.tap()
         }
+        XCTAssertEqual(toggle.value as? String, want)
+    }
+
+    private func enableTurkish(_ app: XCUIApplication) {
+        setTurkishEnabled(app, true)
     }
 
     private func selectLanguage(_ app: XCUIApplication, _ name: String) {
@@ -170,7 +185,9 @@ final class VestraUITests: XCTestCase {
         app.navigationBars.buttons["Cancel"].tap()
 
         app.tabBars.buttons["Settings"].tap()
-        app.buttons["Gold History"].tap()
+        let goldHistory = app.buttons["Gold History"]
+        reveal(goldHistory, in: app)
+        goldHistory.tap()
         XCTAssertTrue(app.staticTexts["₺6,500.00 / g"].waitForExistence(timeout: 5))
         XCTAssertEqual(app.staticTexts.matching(NSPredicate(format: "label ENDSWITH ' / g'")).count, 1, "Same-day price updates replace each other")
     }
@@ -225,7 +242,10 @@ final class VestraUITests: XCTestCase {
         XCTAssertTrue(app.tabBars.buttons["Settings"].waitForExistence(timeout: 5))
         XCTAssertFalse(app.tabBars.buttons["Özet"].exists)
         app.tabBars.buttons["Settings"].tap()
-        XCTAssertTrue(app.staticTexts["English"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 5))
+        let turkishToggle = app.switches["turkishEnabledToggle"]
+        XCTAssertTrue(turkishToggle.waitForExistence(timeout: 5))
+        XCTAssertEqual(turkishToggle.value as? String, "0")
         XCTAssertFalse(app.buttons["Türkçe"].exists)
 
         app.buttons["Categories"].tap()
@@ -252,10 +272,12 @@ final class VestraUITests: XCTestCase {
         app.buttons["Kategoriler"].tap()
         XCTAssertTrue(app.staticTexts["Transit"].waitForExistence(timeout: 5))
 
-        app.switches["turkishEnabledToggle"].tap()
+        app.navigationBars.buttons["Ayarlar"].tap()
+        setTurkishEnabled(app, false)
         XCTAssertTrue(app.tabBars.buttons["Settings"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 5))
+        XCTAssertEqual(app.switches["turkishEnabledToggle"].value as? String, "0")
         XCTAssertFalse(app.buttons["Türkçe"].exists)
-        XCTAssertTrue(app.staticTexts["English"].waitForExistence(timeout: 5))
     }
 
     func testCustomCategoryArchiveAndLanguage() {
@@ -360,7 +382,9 @@ final class VestraUITests: XCTestCase {
             capture("category-editor-\(appearance)")
             app.buttons["Vazgeç"].tap()
             app.navigationBars.buttons["Ayarlar"].tap()
-            app.buttons["Altın Geçmişi"].tap()
+            let goldHistory = app.buttons["Altın Geçmişi"]
+            reveal(goldHistory, in: app)
+            goldHistory.tap()
             XCTAssertTrue(app.navigationBars["Altın Geçmişi"].waitForExistence(timeout: 5))
             sleep(1)
             capture("gold-history-\(appearance)")
